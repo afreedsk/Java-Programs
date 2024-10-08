@@ -4,27 +4,24 @@ class SwitchDemo
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the Java Subject Marks : ");
-		int marks = sc.nextInt();
-		if(marks<35)
-		{
-			System.out.println("Your Fail better luck next time buddy....");
-		}
-		else if(marks>=35 && marks<=50)
-		{
-			System.out.println("D Grade Buddy");
-		}
-		else if(marks>=51 && marks<=70)
-		{
-			System.out.println("C Grade Buddy");
-		}
-		else if(marks>=71 && marks<=90)
-		{
-			System.out.println("B Grade Buddy");
-		}
-		else if(marks>=91 && marks<=100)
-		{
-			System.out.println("A Grade Buddy");
+		System.out.print("Enter Your Num : ");
+		int num = sc.nextInt();
+		switch(num) {
+			case 1 : System.out.println("Its a Sunday");
+			break;
+			case 2 : System.out.println("Its a Monday");
+			break;
+			case 3 : System.out.println("Its a Tuesday");
+			break;
+			case 4 : System.out.println("Its a Wednesday");
+			break;
+			case 5 : System.out.println("Its a Thursday");
+			break;
+			case 6 : System.out.println("Its a Friday");
+			break;
+			case 7 : System.out.println("Its a Saturaday");
+			break;
+			default : System.out.println("Its a Invalid Option..");
 		}
 	}
 }
