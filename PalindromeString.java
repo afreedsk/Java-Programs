@@ -4,19 +4,22 @@ class PalindromeString
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Your String : ");
-        String str = sc.next();
+        System.out.print("Enter Your Name : ");
+        String s = sc.next();
         String rev = "";
-        for(int i=str.length()-1;i>=0;i--)
+        char ch = 0;
+        for(int i=0;i<=s.length();i++)
         {
-            rev = rev+str.charAt(i);
+            ch = s.charAt(i);
+            rev = ch+rev;
         }
-		if(rev==str)
+		if(rev==s)
 		{
-        System.out.println("Its a Palindrome String : "+str);
+        System.out.println("Its a Palindrome String : "+s);
 		}
-		else {
-		System.out.println("It a not Palindrome String: "+str);
+		else
+		{
+			System.out.println("Its Not Palindrome Number : "+s);
 		}
     }
 }
